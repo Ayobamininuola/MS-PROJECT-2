@@ -14,7 +14,7 @@
 <body>
    <header>
        <!--Hero Image and Nav Bar-->
-       <nav class="navbar navbar-expand-lg navbar-light">
+       <nav class="navbar navbar-expand-lg navbar-light navContainer">
         <div class="container-fluid hero-image">
             <a class="navbar-brand" href="#">
             <!---<img src="assets/images/pexels-julius-silver-753626 (1).jpg" alt="Beach>---->  
@@ -34,9 +34,11 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <!--Antarctica dropdown-->
+                  <div class="main-dropdown dropright">
                   <li><a class="dropdown-item" href="#">Antarctica <i class="fas fa-angle-right"></i></a>
-                    <ul>
-                      <li>South Shetland Islands</li>
+                    <div class="sub-dropdown dropdown-menu">
+                    <ul class= "nav">
+                      <li><a href="#">South Shetland Islands</a></li>
                       <li>Antarctic Peninsula</li>
                       <li>Drake Passage</li>
                       <li>Falkland Islands</li>
@@ -45,7 +47,9 @@
                       <li>Port Lockroy</li>
                       <li>Ross Sea/Ice Shelf</li>
                     </ul>
+                  </div>
                   </li>
+                </div>
                   <li><a class="dropdown-item" href="#">Africa</a></li>
                   <li><a class="dropdown-item" href="#">Asia</a></li>
                   <li><a class="dropdown-item" href="#">Australia</a></li>
@@ -79,29 +83,31 @@
    </header> 
    <section class="Gallery">
        <!--Gallery of most visited places for holiday-->
-       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/images/Antalya, Turkey.jpg" class="d-block w-100" alt="Turkey">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/Hurghada, Egypt.jpg" class="d-block w-100" alt="Egypt">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/ibiza.jpg" class="d-block w-100" alt="Ibiza">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/Sicili, Italy.jpg" class="d-block w-100" alt="Italy">
+       <div class="row">
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="assets/images/Antalya, Turkey.jpg" class="card-img-top" alt="Turkey">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="assets/images/Hurghada, Egypt.jpg" class="card-img-top" alt="Egypt">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="assets/images/ibiza.jpg" class="card-img-top" alt="Ibiza">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
       </div>
 
    </section>
