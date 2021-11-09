@@ -96,9 +96,7 @@
    <footer>
        <!--Social media links and contact us page-->
         <div class="row footer-box container-fluid">
-            <a href="https://www.entertainmentdaily.co.uk/news/" target="blank" class="col-sm-4 text-decoration-none">
-                <h2 class="name">Entertainment Gossip</h2>
-            </a>
+            
             <!-- SOCIAL LINKS -->
             <div class="col-sm-8">
                 <div class="row">
@@ -135,7 +133,24 @@
         </div>
    </footer>
    <script>
-       var APIkey ="AIzaSyD1wMkXzzNsYNC1zceXl48YIJQMBojufAQ";
-   </script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Africa
+      const Africa = { lat: -25.344, lng: 131.036 };
+      // The map, centered at Africa
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4,
+        center: Africa,
+      });
+      // The marker, positioned at Africa
+      const marker = new google.maps.Marker({
+        position: Africa,
+        map: map,
+      });
+    }
+  </script>
+   <script async
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1wMkXzzNsYNC1zceXl48YIJQMBojufAQ&callback=initMap">
+</script>
 </body>
 </html>
